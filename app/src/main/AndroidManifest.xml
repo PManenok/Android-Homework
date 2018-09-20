@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".hw1.HW1"></activity>
-
+        <activity android:name=".hw1.HW1" />
+        <activity android:name=".hw2.HW2"></activity>
     </application>
 
 </manifest>

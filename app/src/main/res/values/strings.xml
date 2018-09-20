@@ -1,7 +1,22 @@
 <resources>
     <string name="app_name">HomeWork</string>
-    <!-- App strings -->
+    <!-- Main Menu  -->
+    <string name="hw1">Homework 1</string>
+    <string name="hw2">Homework 2</string>
+    <string name="hw3">Homework 3</string>
+    <string name="hw4">Homework 4</string>
+
+    <!-- Homework 1  -->
     <string name="hello">Hello</string>
     <string name="world">World</string>
     <string name="click">Click</string>
+
+    <!-- Homework 2  -->
+    <string name="Austria">Austria</string>
+    <string name="Italy">Italy</string>
+    <string name="Colombia">Colombia</string>
+    <string name="Madagascar">Madagascar</string>
+    <string name="Poland">Poland</string>
+    <string name="Thailand">Thailand</string>
+    <string name="Denmark">Denmark</string>
 </resources>

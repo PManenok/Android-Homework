@@ -5,7 +5,13 @@
     <color name="colorAccent">#FF4081</color>
     <!-- My app colors -->
     <color name="colorText">#000000</color>
-    <color name="Red">#ff262a</color>
-    <color name="Green">#2aff12</color>
-    <color name="Yellow">#ffe100</color>
+    <color name="colorCountryBackground">#e4e4e4</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff262a</color>
+    <color name="darkRed">#cf0004</color>
+    <color name="blue">#0000ff</color>
+    <color name="darkBlue">#000091</color>
+    <color name="green">#17e100</color>
+    <color name="darkGreen">#109e00</color>
+    <color name="yellow">#ffe100</color>
 </resources>
