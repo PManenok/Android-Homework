@@ -6,31 +6,40 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import by.itacademy.palina.homework.hw1.HW1;
-import by.itacademy.palina.homework.hw2.HW2;
+import by.itacademy.palina.homework.classwork.cw1.CW1;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btnHW1;
-    private Button btnHW2;
+    private View.OnClickListener listener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Class clazz = MainActivity.class;
+            String numHW = String.valueOf(((Button) v).getText()).split(" ")[1];
+            try {
+                clazz = Class.forName(getPackageName() + ".hw" + numHW + ".HW" + numHW);
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+            Intent intent = new Intent(MainActivity.this, clazz);
+            startActivity(intent);
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnHW1 = findViewById(R.id.btnHW1);
-        btnHW1.setOnClickListener(new View.OnClickListener() {
+        final Button btnHW1 = findViewById(R.id.btnHW1);
+        btnHW1.setOnClickListener(listener);
+
+        final Button btnHW2 = findViewById(R.id.btnHW2);
+        btnHW2.setOnClickListener(listener);
+
+        Button btnCW = findViewById(R.id.btnCW);
+        btnCW.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, HW1.class);
-                startActivity(intent);
-            }
-        });
-        btnHW2 = findViewById(R.id.btnHW2);
-        btnHW2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, HW2.class);
+                Intent intent = new Intent(MainActivity.this, CW1.class);
                 startActivity(intent);
             }
         });

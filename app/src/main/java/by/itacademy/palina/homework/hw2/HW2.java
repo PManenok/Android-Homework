@@ -6,7 +6,6 @@ import android.os.Bundle;
 import by.itacademy.palina.homework.R;
 
 public class HW2 extends Activity {
-// Австрия, Польша, Италия, Колумбия, Мадагаскар, Таиланд и Дании
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

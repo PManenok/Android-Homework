@@ -3,6 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+	<!-- Classwork colors-->
+	<color name="text">#ffffff</color>
+    <color name="textBackground">#43ffffff</color>
+    <color name="buttonLogIn">#e20f0f</color>
+    <color name="buttonCreateAccount">#e2710f</color>
+    <color name="linkBackground">#00ffffff</color>
     <!-- My app colors -->
     <color name="colorText">#000000</color>
     <color name="colorCountryBackground">#e4e4e4</color>
