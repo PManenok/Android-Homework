@@ -1,9 +1,9 @@
-package by.itacademy.palina.homework.hw2;
+package by.itacademy.palina.task.home.hw2;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-import by.itacademy.palina.homework.R;
+import by.itacademy.palina.task.R;
 
 public class HW2 extends Activity {
     @Override

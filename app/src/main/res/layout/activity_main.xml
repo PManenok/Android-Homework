@@ -13,11 +13,18 @@
         android:text="@string/hw1" />
 
     <Button
-    android:id="@+id/btnHW2"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:text="@string/hw2" />
+        android:id="@+id/btnHW2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/hw2" />
+
+    <Button
+        android:id="@+id/btnHW3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/hw3" />
 
     <Button
         android:id="@+id/btnCW"

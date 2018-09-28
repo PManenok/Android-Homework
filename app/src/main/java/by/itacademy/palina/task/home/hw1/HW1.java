@@ -1,4 +1,4 @@
-package by.itacademy.palina.homework.hw1;
+package by.itacademy.palina.task.home.hw1;
 
 import android.app.Activity;
 import android.graphics.drawable.ColorDrawable;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import by.itacademy.palina.homework.R;
+import by.itacademy.palina.task.R;
 
 public class HW1 extends Activity implements View.OnClickListener {
     private TextView textView1;

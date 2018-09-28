@@ -5,9 +5,9 @@
     <string name="hw2">Homework 2</string>
     <string name="hw3">Homework 3</string>
     <string name="hw4">Homework 4</string>
+    <string name="cw1">Classwork 1</string>
 
     <!-- Classwork 1 -->
-    <string name="cw1">Classwork 1</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">Log in</string>
@@ -28,4 +28,11 @@
     <string name="Poland">Poland</string>
     <string name="Thailand">Thailand</string>
     <string name="Denmark">Denmark</string>
+
+    <!-- Homework 3  -->
+    <string name="enterImageLink">Enter image link</string>
+    <string name="ready">Ready</string>
+    <string name="clear">Clear</string>
+
+    <!-- Homework 4  -->
 </resources>

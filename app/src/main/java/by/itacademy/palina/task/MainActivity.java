@@ -1,26 +1,31 @@
-package by.itacademy.palina.homework;
+package by.itacademy.palina.task;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
-import by.itacademy.palina.homework.classwork.cw1.CW1;
+import by.itacademy.palina.task.classwork.CW1;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     private View.OnClickListener listener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Class clazz = MainActivity.class;
-            String numHW = String.valueOf(((Button) v).getText()).split(" ")[1];
+            Intent intent = null;
+            //by.itacademy.palina.task
             try {
-                clazz = Class.forName(getPackageName() + ".hw" + numHW + ".HW" + numHW);
+                String numHW = String.valueOf(((Button) v).getText()).split(" ")[1];
+                Class clazz = Class.forName(getPackageName() + ".home.hw" + numHW + ".HW" + numHW);
+                intent = new Intent(MainActivity.this, clazz);
             } catch (ClassNotFoundException e) {
+                Toast.makeText(MainActivity.this, getPackageName(), Toast.LENGTH_SHORT).show();
                 e.printStackTrace();
             }
-            Intent intent = new Intent(MainActivity.this, clazz);
-            startActivity(intent);
+            if (intent != null) {
+                startActivity(intent);
+            }
         }
     };
 
@@ -34,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
 
         final Button btnHW2 = findViewById(R.id.btnHW2);
         btnHW2.setOnClickListener(listener);
+
+        final Button btnHW3 = findViewById(R.id.btnHW3);
+        btnHW3.setOnClickListener(listener);
 
         Button btnCW = findViewById(R.id.btnCW);
         btnCW.setOnClickListener(new View.OnClickListener() {

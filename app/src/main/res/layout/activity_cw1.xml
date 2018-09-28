@@ -47,7 +47,8 @@
             android:layout_marginTop="20dp"
             android:drawableLeft="@drawable/ic_input_password"
             android:drawablePadding="20sp"
-            android:hint="@string/password" />
+            android:hint="@string/password"
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/btnLogIn"
@@ -58,7 +59,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
-            android:background="@color/buttonLogIn"
+            android:background="@drawable/login_btn_selector"
             android:text="@string/login" />
 
         <TextView
@@ -67,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:background="@color/linkBackground"
+            android:background="@color/cwLinkBackground"
             android:text="@string/forget" />
 
         <View
@@ -83,7 +84,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="20dp"
-            android:background="@color/buttonCreateAccount"
+            android:background="@color/cwButtonCreateAccount"
             android:text="@string/create" />
     </LinearLayout>
 

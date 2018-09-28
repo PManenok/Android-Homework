@@ -1,7 +1,6 @@
-package by.itacademy.palina.homework.classwork.cw1;
+package by.itacademy.palina.task.classwork;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -9,7 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import by.itacademy.palina.homework.R;
+import by.itacademy.palina.task.BuildConfig;
+import by.itacademy.palina.task.R;
 
 public class CW1 extends Activity {
     private Button btnLogIn;
@@ -40,6 +40,7 @@ public class CW1 extends Activity {
         btnLogIn = findViewById(R.id.btnLogIn);
         loginET = findViewById(R.id.loginET);
         passwordET = findViewById(R.id.passwordET);
+        loginET.setText(BuildConfig.SERVER_URL);
 
         btnLogIn.setOnClickListener(listener);
     }

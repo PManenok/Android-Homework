@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+
     <TextView
         android:id="@+id/loginTV"
         android:layout_width="match_parent"
@@ -13,5 +14,17 @@
         android:id="@+id/myImage"
         android:layout_width="250dp"
         android:layout_height="250dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:tint="@color/solar_selector"
+        android:src="@drawable/ic_brightness_7_black_24dp" />
+
+    <by.itacademy.palina.task.classwork.MyView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>

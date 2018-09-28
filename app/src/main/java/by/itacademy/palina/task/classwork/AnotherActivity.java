@@ -1,4 +1,4 @@
-package by.itacademy.palina.homework.classwork.cw1;
+package by.itacademy.palina.task.classwork;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-import by.itacademy.palina.homework.R;
+import by.itacademy.palina.task.R;
 
 public class AnotherActivity extends Activity {
     public static final String EXTRA_USERNAME = "EXTRA_USERNAME";
@@ -20,12 +20,13 @@ public class AnotherActivity extends Activity {
         intent.putExtra(AnotherActivity.EXTRA_USERNAME, String.valueOf(username));//login
         intent.putExtra(AnotherActivity.EXTRA_PASSWORD, String.valueOf(password));//password
         activity.startActivity(intent);
+        //activity.overridePendingTransition(R.anim,R.anim); анимация переключения активити
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.anotherActivity);
+        setContentView(R.layout.another_activity);
         Intent intent = getIntent();
         String username = intent.getStringExtra(EXTRA_USERNAME);
         String password = intent.getStringExtra(EXTRA_PASSWORD);
@@ -33,5 +34,23 @@ public class AnotherActivity extends Activity {
         textView.setText(username + " " + password);
         ImageView image1 = findViewById(R.id.myImage);
         Picasso.get().load("http://i.imgur.com/DvpvklR.png").into(image1);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // stop animation
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        //continue animation
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        //activity.overridePendingTransition(R.anim,R.anim);
     }
 }
