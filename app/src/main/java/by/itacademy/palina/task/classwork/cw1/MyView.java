@@ -1,4 +1,4 @@
-package by.itacademy.palina.task.classwork;
+package by.itacademy.palina.task.classwork.cw1;
 
 import android.content.Context;
 import android.graphics.Canvas;

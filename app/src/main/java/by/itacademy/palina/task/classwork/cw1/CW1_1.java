@@ -1,4 +1,4 @@
-package by.itacademy.palina.task.classwork;
+package by.itacademy.palina.task.classwork.cw1;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,14 +11,14 @@ import com.squareup.picasso.Picasso;
 
 import by.itacademy.palina.task.R;
 
-public class AnotherActivity extends Activity {
+public class CW1_1 extends Activity {
     public static final String EXTRA_USERNAME = "EXTRA_USERNAME";
     public static final String EXTRA_PASSWORD = "EXTRA_PASSWORD";
 
     public static void show(Activity activity, String username, String password) {
-        Intent intent = new Intent(activity, AnotherActivity.class);
-        intent.putExtra(AnotherActivity.EXTRA_USERNAME, String.valueOf(username));//login
-        intent.putExtra(AnotherActivity.EXTRA_PASSWORD, String.valueOf(password));//password
+        Intent intent = new Intent(activity, CW1_1.class);
+        intent.putExtra(CW1_1.EXTRA_USERNAME, String.valueOf(username));//login
+        intent.putExtra(CW1_1.EXTRA_PASSWORD, String.valueOf(password));//password
         activity.startActivity(intent);
         //activity.overridePendingTransition(R.anim,R.anim); анимация переключения активити
     }
@@ -26,7 +26,7 @@ public class AnotherActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.another_activity);
+        setContentView(R.layout.activity_cw1_1);
         Intent intent = getIntent();
         String username = intent.getStringExtra(EXTRA_USERNAME);
         String password = intent.getStringExtra(EXTRA_PASSWORD);

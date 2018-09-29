@@ -27,10 +27,23 @@
         android:text="@string/hw3" />
 
     <Button
-        android:id="@+id/btnCW"
+        android:id="@+id/btnHW4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/hw4" />
+
+    <Button
+        android:id="@+id/btnCW1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/cw1" />
+    <Button
+        android:id="@+id/btnCW2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/cw2" />
 
 </LinearLayout>

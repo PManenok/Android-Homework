@@ -29,7 +29,7 @@ public class HW3 extends Activity {
     private View.OnClickListener listener2 = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            clearText();
+            clear();
         }
     };
 
@@ -51,8 +51,9 @@ public class HW3 extends Activity {
         });
     }
 
-    private void clearText() {
+    private void clear() {
         editText.setText("");
+        image.setImageDrawable(null);
     }
 
 

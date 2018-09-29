@@ -6,6 +6,7 @@
     <string name="hw3">Homework 3</string>
     <string name="hw4">Homework 4</string>
     <string name="cw1">Classwork 1</string>
+    <string name="cw2">Classwork 2</string>
 
     <!-- Classwork 1 -->
     <string name="username">Username</string>
@@ -35,4 +36,7 @@
     <string name="clear">Clear</string>
 
     <!-- Homework 4  -->
+    <string name="hw4Enter">Enter numbers</string>
+    <string name="hw4Draw">DrawDiagram</string>
+    <!-- Homework 5  -->
 </resources>

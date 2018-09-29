@@ -11,18 +11,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="by.itacademy.palina.task.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="by.itacademy.palina.task.classwork.CW1" />
-        <activity android:name="by.itacademy.palina.task.home.hw1.HW1" />
-        <activity android:name="by.itacademy.palina.task.home.hw2.HW2" />
-        <activity android:name="by.itacademy.palina.task.classwork.AnotherActivity" />
-        <activity android:name="by.itacademy.palina.task.home.hw3.HW3" />
+        <activity android:name=".classwork.cw1.CW1" />
+        <activity android:name=".home.hw1.HW1" />
+        <activity android:name=".home.hw2.HW2" />
+        <activity android:name=".classwork.cw1.CW1_1" />
+        <activity android:name=".home.hw3.HW3" />
+        <activity android:name=".home.hw4.HW4" />
+        <activity android:name=".classwork.cw2.CW2"></activity>
     </application>
 
 </manifest>

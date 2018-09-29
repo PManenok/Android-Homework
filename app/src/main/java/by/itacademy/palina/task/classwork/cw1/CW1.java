@@ -1,4 +1,4 @@
-package by.itacademy.palina.task.classwork;
+package by.itacademy.palina.task.classwork.cw1;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -29,7 +29,7 @@ public class CW1 extends Activity {
             return;
         }
 
-        AnotherActivity.show(this, String.valueOf(loginET.getText()), String.valueOf(passwordET.getText()));
+        CW1_1.show(this, String.valueOf(loginET.getText()), String.valueOf(passwordET.getText()));
     }
 
     @Override

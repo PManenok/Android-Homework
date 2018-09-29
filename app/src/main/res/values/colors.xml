@@ -4,8 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-	<!-- Classwork colors-->
-	<color name="cwText">#ffffff</color>
+    <!-- Classwork colors-->
+    <color name="cwText">#ffffff</color>
     <color name="cwTextBackground">#43ffffff</color>
     <color name="cwButtonLogIn">#ff3737</color>
     <color name="cwButtonCreateAccount">#e2710f</color>
@@ -24,4 +24,6 @@
     <color name="green">#17e100</color>
     <color name="darkGreen">#109e00</color>
     <color name="yellow">#ffe100</color>
+    <color name="orange">#ffe100</color>
+
 </resources>
