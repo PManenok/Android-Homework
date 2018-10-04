@@ -49,6 +49,7 @@ public class HW3 extends Activity {
                 Toast.makeText(HW3.this, e.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
+
     }
 
     private void clear() {

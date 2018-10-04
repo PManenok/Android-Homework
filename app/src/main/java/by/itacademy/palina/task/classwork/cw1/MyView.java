@@ -35,7 +35,7 @@ public class MyView extends View {
         init();
     }
 
-    public void init(){
+    public void init() {
         circlePaint = new Paint();
         circlePaint.setColor(Color.GREEN);
         circlePaint.setAntiAlias(true);
@@ -65,7 +65,7 @@ public class MyView extends View {
         canvas.drawRect(rectF, rectanglePaint);
     }
 
-    public void setColor(){
+    public void setColor() {
         invalidate();
     }
 

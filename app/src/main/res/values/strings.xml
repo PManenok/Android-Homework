@@ -5,8 +5,10 @@
     <string name="hw2">Homework 2</string>
     <string name="hw3">Homework 3</string>
     <string name="hw4">Homework 4</string>
+    <string name="hw5">Homework 5</string>
     <string name="cw1">Classwork 1</string>
     <string name="cw2">Classwork 2</string>
+    <string name="cw3">Classwork 3</string>
 
     <!-- Classwork 1 -->
     <string name="username">Username</string>
@@ -38,5 +40,9 @@
     <!-- Homework 4  -->
     <string name="hw4Enter">Enter numbers</string>
     <string name="hw4Draw">DrawDiagram</string>
+
     <!-- Homework 5  -->
+    <string name="hw5wifiEnabled">WiFi\nenabled</string>
+    <string name="hw5wifiDisabled">WiFi\ndisabled</string>
+    <string name="hw5wifiUnknown">WiFi\nunknown</string>
 </resources>

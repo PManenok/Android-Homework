@@ -3,6 +3,7 @@
     package="by.itacademy.palina.task">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -24,7 +25,12 @@
         <activity android:name=".classwork.cw1.CW1_1" />
         <activity android:name=".home.hw3.HW3" />
         <activity android:name=".home.hw4.HW4" />
+        <activity android:name=".home.hw5.HW5" />
         <activity android:name=".classwork.cw2.CW2"></activity>
+        <activity android:name=".classwork.cw3.CW3"></activity>
+
+        <service android:name=".classwork.cw3.MyService"></service>
+        <service android:name=".classwork.cw3.MyIntentService"></service>
     </application>
 
 </manifest>

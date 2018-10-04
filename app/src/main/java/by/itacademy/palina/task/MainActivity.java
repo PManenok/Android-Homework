@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import by.itacademy.palina.task.classwork.cw1.CW1;
 import by.itacademy.palina.task.classwork.cw2.CW2_1;
+import by.itacademy.palina.task.classwork.cw3.CW3;
 
 public class MainActivity extends Activity {
     private View.OnClickListener listener = new View.OnClickListener() {
@@ -47,6 +48,9 @@ public class MainActivity extends Activity {
         final Button btnHW4 = findViewById(R.id.btnHW4);
         btnHW4.setOnClickListener(listener);
 
+        final Button btnHW5 = findViewById(R.id.btnHW5);
+        btnHW5.setOnClickListener(listener);
+
         Button btnCW1 = findViewById(R.id.btnCW1);
         btnCW1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +64,15 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CW2_1.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnCW3 = findViewById(R.id.btnCW3);
+        btnCW3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CW3.class);
                 startActivity(intent);
             }
         });

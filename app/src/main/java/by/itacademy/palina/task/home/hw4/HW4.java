@@ -1,20 +1,13 @@
 package by.itacademy.palina.task.home.hw4;
 
 import android.app.Activity;
-import android.graphics.drawable.Animatable;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.Toast;
-
-import java.lang.reflect.Array;
-import java.util.Arrays;
 
 import by.itacademy.palina.task.R;
 
