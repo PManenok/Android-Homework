@@ -17,6 +17,9 @@
     <color name="colorCountryBackground">#e4e4e4</color>
 
     <color name="black">#000000</color>
+    <color name="lightGrey">#cfcfcf</color>
+    <color name="grey">#a79d9d</color>
+    <color name="darkGrey">#4d4d4d</color>
     <color name="white">#ffffff</color>
     <color name="red">#ff262a</color>
     <color name="darkRed">#cf0004</color>

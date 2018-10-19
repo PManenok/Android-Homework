@@ -12,7 +12,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:background="@drawable/yellow_chrome_button"
-        android:text="@string/hw5wifiUnknown" />
+        android:text="@string/hw5_wifi_unknown"
+        android:textAllCaps="false" />
 
     <by.itacademy.palina.task.home.hw5.ClockView
         android:id="@+id/hw5clock"

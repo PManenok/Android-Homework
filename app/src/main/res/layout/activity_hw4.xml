@@ -17,7 +17,7 @@
         android:id="@+id/hw4EnterNums"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hw4Enter"
+        android:hint="@string/hw4_enter"
         android:paddingStart="20dp"
         android:paddingLeft="20dp" />
 
@@ -25,7 +25,7 @@
         android:id="@+id/hw4btnDraw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hw4Draw" />
+        android:text="@string/hw4_draw" />
 
     <by.itacademy.palina.task.home.hw4.PieDiagram
         android:id="@+id/hw4Pie"

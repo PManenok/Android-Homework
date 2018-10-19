@@ -14,7 +14,7 @@
         android:background="@color/yellow"
         android:paddingLeft="20sp"
         android:paddingRight="20sp"
-        android:text="@string/hello" />
+        android:text="@string/hw1_hello" />
 
     <TextView
         android:id="@+id/textView2"
@@ -26,7 +26,7 @@
         android:background="@color/green"
         android:paddingLeft="20sp"
         android:paddingRight="20sp"
-        android:text="@string/world" />
+        android:text="@string/hw1_world" />
 
     <Button
         android:id="@+id/btnClick"
@@ -36,7 +36,7 @@
         android:layout_gravity="center"
         android:layout_weight="1"
         android:background="@color/red"
-        android:text="@string/click" />
+        android:text="@string/hw1_click" />
 
 
 </LinearLayout>

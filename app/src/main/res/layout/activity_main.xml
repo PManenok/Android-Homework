@@ -44,6 +44,20 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/hw5" />
+
+        <Button
+            android:id="@+id/btnHW6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/hw6" />
+
+        <Button
+            android:id="@+id/btnHW7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/hw7" />
     </LinearLayout>
 
     <LinearLayout
@@ -72,5 +86,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/cw3" />
+
+        <Button
+            android:id="@+id/btnCW4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/cw4" />
     </LinearLayout>
 </LinearLayout>

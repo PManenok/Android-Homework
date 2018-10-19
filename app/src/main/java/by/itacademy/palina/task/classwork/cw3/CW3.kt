@@ -2,19 +2,31 @@ package by.itacademy.palina.task.classwork.cw3
 
 import android.app.Activity
 import android.content.ComponentName
+import android.content.Context
 import android.content.ServiceConnection
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.os.IBinder
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.widget.ProgressBar
+import android.widget.Toast
 import by.itacademy.palina.task.R
 
 class CW3 : Activity() {
+    companion object {
+        const val SHARED_PREFS_NAME = "awsxfgvbhj"
+        const val HELLO_KEY = "asdfg"
+    }
+
     //val service: MyService? = null
     private lateinit var progressBar: ProgressBar
-    private val adapter = ItemsListAdapter()
+    //private val adapter = ItemsListAdapter()
+    private val adapter = ItemsListAdapter {
+        Log.e("aaa", "student name = ${it.name}")
+    }
+    private lateinit var sharedPrefs: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +35,7 @@ class CW3 : Activity() {
         val recyclerView = findViewById<RecyclerView>(R.id.cw3recycler)
         progressBar = findViewById<ProgressBar>(R.id.cw3progress)
 
+        sharedPrefs = getSharedPreferences(SHARED_PREFS_NAME, Context.MODE_PRIVATE)
 
         val listData = listOf<MyItem>(
                 MyItem("12345", "67890"),
@@ -46,6 +59,23 @@ class CW3 : Activity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.setHasFixedSize(true)//same width, height and etc.
 
+        //adapter.onItemClick = object : ItemsListAdapter.OnItemClick{
+        //    override fun onItemClick(item : MyItem){
+        //        Log.e("aaa", "item name = ${item.name}")
+        //    }
+        //}
+    }
+
+    override fun onStart() {
+        super.onStart()
+        val text = sharedPrefs.getString(HELLO_KEY, "No data")
+        Toast.makeText(this, text, Toast.LENGTH_LONG).show()
+        Log.e("aaa", "message = $text")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        sharedPrefs.edit().putString(HELLO_KEY, "Hello").apply()
     }
 
     override fun onResume() {

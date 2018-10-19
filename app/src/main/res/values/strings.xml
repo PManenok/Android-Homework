@@ -1,14 +1,20 @@
 <resources>
     <string name="app_name">HomeWork</string>
+
     <!-- Main Menu  -->
     <string name="hw1">Homework 1</string>
     <string name="hw2">Homework 2</string>
     <string name="hw3">Homework 3</string>
     <string name="hw4">Homework 4</string>
     <string name="hw5">Homework 5</string>
+    <string name="hw6">Homework 6</string>
+    <string name="hw7">Homework 7</string>
+
     <string name="cw1">Classwork 1</string>
     <string name="cw2">Classwork 2</string>
     <string name="cw3">Classwork 3</string>
+    <string name="cw4">Classwork 4</string>
+    <string name="cw5">Classwork 5</string>
 
     <!-- Classwork 1 -->
     <string name="username">Username</string>
@@ -19,9 +25,9 @@
     <string name="error">Error</string>
 
     <!-- Homework 1  -->
-    <string name="hello">Hello</string>
-    <string name="world">World</string>
-    <string name="click">Click</string>
+    <string name="hw1_hello">Hello</string>
+    <string name="hw1_world">World</string>
+    <string name="hw1_click">Click</string>
 
     <!-- Homework 2  -->
     <string name="Austria">Austria</string>
@@ -33,16 +39,33 @@
     <string name="Denmark">Denmark</string>
 
     <!-- Homework 3  -->
-    <string name="enterImageLink">Enter image link</string>
-    <string name="ready">Ready</string>
-    <string name="clear">Clear</string>
+    <string name="hw3_link">Enter image link</string>
+    <string name="hw3_ready">Ready</string>
+    <string name="hw3_clear">Clear</string>
 
     <!-- Homework 4  -->
-    <string name="hw4Enter">Enter numbers</string>
-    <string name="hw4Draw">DrawDiagram</string>
+    <string name="hw4_enter">Enter numbers</string>
+    <string name="hw4_draw">DrawDiagram</string>
 
     <!-- Homework 5  -->
-    <string name="hw5wifiEnabled">WiFi\nenabled</string>
-    <string name="hw5wifiDisabled">WiFi\ndisabled</string>
-    <string name="hw5wifiUnknown">WiFi\nunknown</string>
+    <string name="hw5_wifi_enabled">WiFi\nenabled</string>
+    <string name="hw5_wifi_disabled">WiFi\ndisabled</string>
+    <string name="hw5_wifi_unknown">WiFi\nunknown</string>
+
+    <!-- Homework 6  -->
+    <string name="hw6_state">WiFi state is</string>
+    <string name="hw6_enabled">Enabled</string>
+    <string name="hw6_disabled">Disabled</string>
+    <string name="hw6_unknown">Unknown</string>
+
+    <!-- Homework 7  -->
+    <string name="hw7_search_edit">Search…</string>
+    <string name="hw7_user_pic">User Pic</string>
+    <string name="hw7_name_edit">Enter user name</string>
+    <string name="hw7_sur_edit">Enter user surname</string>
+    <string name="hw7_pic_edit">Enter user image link</string>
+    <string name="hw7_btn_save">Save changes</string>
+    <string name="hw7_btn_check">Check picture</string>
+    <string name="hw7_btn_delete">Delete user info</string>
+
 </resources>

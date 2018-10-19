@@ -20,8 +20,8 @@
         <item name="android:gravity">center</item>
         <item name="android:textAllCaps">true</item>
     </style>
-	
-	<style name="MyText">
+
+    <style name="MyText">
         <item name="android:textColor">@color/cwText</item>
         <item name="android:background">@color/cwTextBackground</item>
         <item name="android:textSize">20sp</item>
@@ -37,20 +37,26 @@
         <item name="android:paddingRight">5dp</item>
     </style>
 
-    <style name="WifiEnabledButton">
-        <item name="android:textColor">@color/wifiEnabled</item>
-        <item name="android:textSize">20sp</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="android:paddingLeft">5dp</item>
-        <item name="android:paddingRight">5dp</item>
-    </style>
-    <style name="WifiDisabledButton">
-        <item name="android:textColor">@color/wifiDisabled</item>
-        <item name="android:textSize">20sp</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="android:paddingLeft">5dp</item>
-        <item name="android:paddingRight">5dp</item>
+    <style name="EditTextStyleHW7">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:background">@color/lightGrey</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColorHint">@color/darkGrey</item>
     </style>
 
+    <style name="UserDataTextStyleHW7">
+        <item name="android:background">@color/lightGrey</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
 
 </resources>

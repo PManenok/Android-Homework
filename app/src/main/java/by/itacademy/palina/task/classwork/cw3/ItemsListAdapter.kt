@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import by.itacademy.palina.task.R
 
-class ItemsListAdapter : RecyclerView.Adapter<ItemsListAdapter.Holder>() {
+class ItemsListAdapter(val onItemClick: (MyItem) -> Unit) : RecyclerView.Adapter<ItemsListAdapter.Holder>() {
+    //var onItemClick: OnItemClick? = null
+
     var listData: List<MyItem> = emptyList()
         set(value) {
             field = value
@@ -26,18 +28,32 @@ class ItemsListAdapter : RecyclerView.Adapter<ItemsListAdapter.Holder>() {
         val item = listData[position]
         holder.nameTextView.setText(item.name)
         holder.surnameTextView.setText(item.surname)
+
+        holder.itemView.setOnClickListener {
+            //onItemClick?.onItemClick(item) //first
+            onItemClick(item) //second
+        }
     }
 
+    override fun getItemViewType(position: Int): Int {
+        return 0
+    }
 
     override fun getItemCount(): Int = listData.size
 
     inner class Holder : RecyclerView.ViewHolder {
-        lateinit var nameTextView: TextView
-        lateinit var surnameTextView: TextView
+        var nameTextView: TextView
+        var surnameTextView: TextView
 
         constructor(view: View) : super(view) {
             nameTextView = view.findViewById(R.id.itemTextView1)
             surnameTextView = view.findViewById(R.id.itemTextView2)
+        }
+    }
+
+    interface OnItemClick {
+        fun onItemClick(item: MyItem) {
+
         }
     }
 }

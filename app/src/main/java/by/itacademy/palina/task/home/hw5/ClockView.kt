@@ -78,18 +78,17 @@ class ClockView : View {
         super.onDraw(canvas)
         countNums()
         canvas.drawCircle(cX, cY, radius, circlePaint)
+        drawDashes(canvas)
+
         canvas.drawText("12", cX - linePaint.textSize / 1.7f, cY - radius * 0.8f, linePaint)
         canvas.drawText("6", cX - linePaint.textSize / 3f, cY + radius * 0.95f, linePaint)
         canvas.drawText("9", cX - radius * 0.95f, cY * 1.05f, linePaint)
         canvas.drawText("3", cX + radius * 0.8f, cY * 1.05f, linePaint)
 
-        drawDashes(canvas)
-
         val minute = calendar.get(Calendar.MINUTE)
         val hourDegree = 360f / 12 * calendar.get(Calendar.HOUR) + 360f / 12 / 60 * minute
         val minuteDegree = 360f / 60 * minute
         val secondDegree = 360f / 60 * calendar.get(Calendar.SECOND)
-
         drawHand(canvas, hourDegree, 2f, 15f)
         drawHand(canvas, minuteDegree, 1.3f, 10f)
         drawHand(canvas, secondDegree, 1.15f, 3f)

@@ -19,11 +19,11 @@ class HW5 : Activity() {
         override fun onReceive(context: Context, intent: Intent) {
             var state = intent.getIntExtra(WifiManager.EXTRA_WIFI_STATE, WifiManager.WIFI_STATE_UNKNOWN)
             if (state == WifiManager.WIFI_STATE_ENABLED) {
-                btn.setText(R.string.hw5wifiEnabled)
+                btn.setText(R.string.hw5_wifi_enabled)
                 btn.setBackgroundResource(R.drawable.green_chrome_button)
             } else if (state == WifiManager.WIFI_STATE_DISABLED) {
-                btn.setText(R.string.hw5wifiDisabled)
-                btn.setBackgroundResource(R.drawable.red_chrome)
+                btn.setText(R.string.hw5_wifi_disabled)
+                btn.setBackgroundResource(R.drawable.red_chrome_button)
             }
         }
     }
