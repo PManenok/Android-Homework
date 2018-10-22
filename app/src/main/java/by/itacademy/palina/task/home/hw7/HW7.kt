@@ -9,12 +9,14 @@ import android.support.v4.content.LocalBroadcastManager
 import android.support.v7.app.AppCompatActivity
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.widget.EditText
 import android.widget.LinearLayout
 import by.itacademy.palina.task.R
 
 class HW7 : AppCompatActivity() {
     private var isTablet = false
+    private var isLand = false
     private val fragmentManager = supportFragmentManager
     private lateinit var manager: LocalBroadcastManager
     private lateinit var searchUser: EditText
@@ -23,9 +25,11 @@ class HW7 : AppCompatActivity() {
         override fun onReceive(context: Context?, intent: Intent) {
             val status = intent.getStringExtra("STATUS_EXTRA")
             val id = intent.getLongExtra("USER_ID", 0)
-            if (isTablet) {
+            if (isTablet || isLand) {
+                Log.e("aaa", "Tab or Land")
                 tabletChangeFragment(status, id)
             } else {
+                Log.e("aaa", "Phone")
                 phoneChangeFragment(status, id)
             }
         }
@@ -46,13 +50,15 @@ class HW7 : AppCompatActivity() {
     }
 
     fun phoneChangeFragment(status: String, id: Long) {
+        val transactionFragment = fragmentManager.beginTransaction()
         if (status == "EDITED") {
-            val transactionFragment = fragmentManager.beginTransaction()
             UserDataEditFragment.USER_ID = id
             transactionFragment.replace(R.id.hw7_container, UserDataEditFragment.getInstance(), "EDIT_FRAGMENT")
             transactionFragment.addToBackStack(null)
             transactionFragment.commit()
         } else {
+            val frag = fragmentManager.findFragmentByTag("EDIT_FRAGMENT")
+            transactionFragment.detach(frag)
             fragmentManager.popBackStack()
         }
     }
@@ -60,6 +66,7 @@ class HW7 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hw7)
+        isLand = (findViewById<LinearLayout>(R.id.hw7_main_layout).getTag().toString() == "phone_land")
         isTablet = (findViewById<LinearLayout>(R.id.hw7_main_layout).getTag().toString() == "tablet")
         setListFragment()
         manager = LocalBroadcastManager.getInstance(this)
@@ -83,7 +90,7 @@ class HW7 : AppCompatActivity() {
 
     private fun setListFragment() {
         val transactionFragment = fragmentManager.beginTransaction()
-        if (isTablet)
+        if (isTablet || isLand)
             transactionFragment.replace(R.id.hw7_container_list, UserDataListFragment.getInstance(), "LIST_FRAGMENT")
         else
             transactionFragment.replace(R.id.hw7_container, UserDataListFragment.getInstance(), "LIST_FRAGMENT")

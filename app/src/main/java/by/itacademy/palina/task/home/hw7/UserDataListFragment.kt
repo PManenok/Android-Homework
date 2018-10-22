@@ -39,7 +39,7 @@ class UserDataListFragment : Fragment() {
                     adapter.listKey.remove(userID)
                 }
             } else if (intent.action == "SEARCH_TEXT_CHANGED") {
-                val str = intent.getStringExtra("SEARCH_STRING")//Sort user data, send new data...
+                val str = intent.getStringExtra("SEARCH_STRING")
                 adapter.sortByString(str)
             }
         }
